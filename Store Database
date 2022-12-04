@@ -1,0 +1,9 @@
+CREATE TABLE Crystal_Shop (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Crystal_Shop VALUES (1, "Obsidian", 5, 25);
+INSERT INTO Crystal_Shop VALUES (2, "Tiger Eye", 5, 20);
+INSERT INTO Crystal_Shop VALUES (3, "Selenite", 5, 15);
+INSERT INTO Crystal_Shop VALUES (4, "Quartz", 5, 18);
+INSERT INTO Crystal_Shop VALUES (5, "Citrine", 5, 28);
+
+SELECT name, SUM (quantity) FROM Crystal_Shop GROUP By price; 
